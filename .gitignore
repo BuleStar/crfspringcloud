@@ -88,3 +88,6 @@ consumer-fegin-hystrix-stream/.mvn/wrapper/maven-wrapper.jar
 config-server/.mvn/wrapper/maven-wrapper.jar
 test-config-client/.mvn/wrapper/maven-wrapper.jar
 provider-user-sleuth-zipkin/.mvn/wrapper/maven-wrapper.jar
+/.idea/
+/config-server/.mvn/
+/crf-springcloud.iml
