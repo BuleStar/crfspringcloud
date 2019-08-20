@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import java.math.BigDecimal;
 
 /**
- * @author zhouli
+ * @author caoruifeng
  */
 @FeignClient(name = "provider-user", fallback = UserFeignClientFallback.class)
 public interface UserFeignClient {
