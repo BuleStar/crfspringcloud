@@ -10,6 +10,9 @@ import org.springframework.context.annotation.Bean;
 import java.math.BigDecimal;
 import java.util.stream.Stream;
 
+/**
+ * @author hongfei
+ */
 @SpringBootApplication
 public class ProviderUserSleuthZipkinApplication {
 

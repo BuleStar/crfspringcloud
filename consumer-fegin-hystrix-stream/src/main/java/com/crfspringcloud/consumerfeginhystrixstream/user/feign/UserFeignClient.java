@@ -15,6 +15,7 @@ import java.math.BigDecimal;
 public interface UserFeignClient {
   @GetMapping("/users/{id}")
   User findById(@PathVariable("id") Long id);
+  Boolean updateById(User user);
 }
 
 @Component
@@ -22,5 +23,11 @@ class UserFeignClientFallback implements UserFeignClient {
   @Override
   public User findById(Long id) {
     return new User(id, "默认用户", "默认用户", 0, new BigDecimal(1));
+  }
+
+  @Override
+  public Boolean updateById(User user) {
+
+    return false;
   }
 }

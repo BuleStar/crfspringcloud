@@ -15,7 +15,7 @@ public class SnowflakeIdWorker {
     private final long maxWorkerId = -1L ^ (-1L << workerIdBits);
 
     /** 支持的最大数据标识id，结果是31 */
-    private final long maxDataCenterId = -1L ^ (-1L << dataCenterIdBits);
+    private final long maxDatacenterId = -1L ^ (-1L << dataCenterIdBits);
 
     /** 序列在id中占的位数 */
     private final long sequenceBits = 12L;
@@ -54,8 +54,8 @@ public class SnowflakeIdWorker {
         if (workerId > maxWorkerId || workerId < 0) {
             throw new IllegalArgumentException(String.format("worker Id can't be greater than %d or less than 0", maxWorkerId));
         }
-        if (datacenterId > maxDataCenterId || datacenterId < 0) {
-            throw new IllegalArgumentException(String.format("datacenter Id can't be greater than %d or less than 0", maxDataCenterId));
+        if (datacenterId > maxDatacenterId || datacenterId < 0) {
+            throw new IllegalArgumentException(String.format("datacenter Id can't be greater than %d or less than 0", maxDatacenterId));
         }
         this.workerId = workerId;
         this.datacenterId = datacenterId;
