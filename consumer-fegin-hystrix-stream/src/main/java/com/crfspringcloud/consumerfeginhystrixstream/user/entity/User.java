@@ -6,6 +6,9 @@ import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 
+/**
+ * @author hongfei
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -15,4 +18,5 @@ public class User {
   private String name;
   private Integer age;
   private BigDecimal balance;
+
 }
